@@ -78,7 +78,7 @@ def call_groq_single(b64_image, prompt_text, system=None):
         "https://api.groq.com/openai/v1/chat/completions",
         headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
         json={
-            "model": "meta-llama/llama-4-maverick-17b-128e-instruct",
+            "model": "meta-llama/llama-4-scout-17b-16e-instruct",
             "messages": messages,
             "max_tokens": 400,
             "temperature": 0.1
